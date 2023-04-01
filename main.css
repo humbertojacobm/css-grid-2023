@@ -36,6 +36,36 @@ body {
 
 .boro___ {
     grid-area: boro___;
+    display: grid;
+    grid-template-rows: 30px 1fr 30px;
+}
+
+.boro___ .boro-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: 24px;
+    border: unset;
+}
+
+.boro___ .boro-top .align_left{
+    text-align: right;
+}
+
+.boro___ .boro-text-center {
+    font-size: 64px;
+    font-weight: 600;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: unset;
+}
+
+.boro___ .boro-footer {
+    font-size: 24px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: unset;
 }
 
 .types__ {
@@ -113,4 +143,32 @@ body {
     display: grid;
     align-content: center;
     text-align: center;
+}
+
+.cell{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    border: unset;
+}
+
+.cell .cell-top{
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: unset;
+}
+
+.cell .cell-center{
+    font-size: 24px;
+    font-weight: 800;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: unset;
+}
+
+.cell .cell-footer{
+    font-size: 16px;
+    text-align: center;
+    border: unset;
 }
