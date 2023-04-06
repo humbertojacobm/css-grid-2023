@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Categories using CSS Grid and Subgrids</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas:
+                "header header header"
+                "meat vegetables fruits";
+            grid-gap: 10px;
+        }
+
+        .item {
+            padding: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .meat {
+            grid-area: meat;
+        }
+
+        .vegetables {
+            grid-area: vegetables;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+
+        .fruits {
+            grid-area: fruits;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+
+        .subitem {
+            background-color: #f0f0f0;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">Food Categories</div>
+        <div class="item meat">
+            Meat
+            <ul>
+                <li>Chicken</li>
+                <li>Beef</li>
+                <li>Pork</li>
+            </ul>
+        </div>
+        <div class="item vegetables">
+            Vegetables
+            <div class="subitem">
+                <h4>Leafy Greens</h4>
+                <ul>
+                    <li>Spinach</li>
+                    <li>Kale</li>
+                    <li>Lettuce</li>
+                </ul>
+            </div>
+            <div class="subitem">
+                <h4>Root Vegetables</h4>
+                <ul>
+                    <li>Carrots</li>
+                    <li>Beets</li>
+                    <li>Potatoes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item fruits">
+            Fruits
+            <div class="subitem">
+                <h4>Citrus</h4>
+                <ul>
+                    <li>Orange</li>
+                    <li>Lemon</li>
+                    <li>Grapefruit</li>
+                </ul>
+            </div>
+            <div class="subitem">
+                <h4>Berries</h4>
+                <ul>
+                    <li>Strawberries</li>
+                    <li>Blueberries</li>
+                    <li>Raspberries</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

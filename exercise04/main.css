@@ -1,0 +1,108 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  margin: 20px auto;
+  width: 800px;
+  height: 600px;
+  background-color: lightgray;
+  grid-template-areas:
+    "header header header"
+    "nav breakfast lunch"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: white;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: white;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+.breakfast {
+  grid-area: breakfast;
+  background-color: white;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+.breakfast h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.breakfast ul {
+  list-style: none;
+  padding: 0;
+}
+
+.breakfast li {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lunch {
+  grid-area: lunch;
+  background-color: white;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+.lunch h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.lunch ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lunch li {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.dinner {
+  background-color: white;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid gray;
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.dinner h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.dinner ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dinner li {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  grid-area:

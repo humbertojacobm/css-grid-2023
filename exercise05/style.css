@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.contenedora {
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hoja {
+    width: 100px;
+    background-color: white;
+    width: 600px;
+}
+
+.titulo {
+    text-align: center;
+}
+.contenedorlognombre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    background-image: url('man-short.jpg');
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+}
